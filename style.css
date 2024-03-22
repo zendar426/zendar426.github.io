@@ -1,0 +1,76 @@
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+*{
+    font-family: monospace;
+    background-color: #f1ecec
+    
+}
+
+.name-container{
+    font-size: 32px;
+    background-color: #fff;
+    
+}
+
+.general-container{
+    padding-left: 300px;
+    padding-right:300px;
+}
+
+.lab-experience{
+    padding-left: 10px;
+    margin-top: 44px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    border: 1px;
+    border-color: #000;
+    border-style: solid;
+    box-shadow: 5px 5px 5px #747474;
+    
+}
+.plus-info-container{
+    padding-top: 10px;
+    justify-content: space-between;
+    display: flex;
+}
+.manejo-leng-prog{
+    border: 1px;
+    border-color: #000;
+    font-size: 14px;
+    border-style: solid;
+    box-shadow: 5px 5px 5px #747474;
+    padding: 10px;
+}
+
+.manejo-lang{
+    border: 1px;
+    border-color: #000;
+    border-style: solid;
+    font-size: 14px;
+    box-shadow: 5px 5px 5px #747474;
+}
+
+
+.titulo-manejo-lista-exp-lab{
+    font-size: 20px;
+}
+
+.datos-personales{
+    padding-top: 50px;
+    font-size: 16px;
+}
+
+.parrafo-lab-experience{
+    margin-left: 10px;
+}
+
+img{
+    box-shadow: 1px     5px 5px black;
+    mask-image: linear-gradient(
+        black 80%,
+        rgba(0,0,0,0.5)
+    );  
+}
