@@ -22,15 +22,23 @@ document.addEventListener('keydown', function(event) {
         // Personaje 1 ataca a Personaje 2
         personaje2.hp -= personaje1.daño;
         if (personaje2.hp <= 0) {
-            alert('Personaje 1 ha ganado la batalla');
-            finished=true;
+            document.getElementById('monje-rojo').src=document.getElementById('monje-azul').src;
+            setTimeout(function(){
+                alert('Personaje 1 ha ganado la batalla');
+                finished=true;
+            },300);
+
         }
     } else if (event.key === 'n') {
         // Personaje 2 ataca a Personaje 1
         personaje1.hp -= personaje2.daño;
         if (personaje1.hp <= 0) {
-            alert('Personaje 2 ha ganado la batalla');
+            document.getElementById('monje-azul').src=document.getElementById('monje-rojo').src;
+            setTimeout(function(){
+                alert('Personaje 2 ha ganado la batalla');
+                
             finished=true;
+            },300);
         }
     }
 
