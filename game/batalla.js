@@ -12,6 +12,9 @@ let personaje2 = {
 
 // Mostrar los HP iniciales
 alert(`Personaje 1 HP: ${personaje1.hp}\nPersonaje 2 HP: ${personaje2.hp}`);
+// agregar audio
+let audio = new Audio('./sounds/successful_comvertion_.wav');
+
 let finished = false;
 // Escuchar las teclas 'x' y 'n'
 document.addEventListener('keydown', function(event) {
@@ -25,6 +28,7 @@ document.addEventListener('keydown', function(event) {
             document.getElementById('monje-rojo').src=document.getElementById('monje-azul').src;
             setTimeout(function(){
                 alert('Personaje 1 ha ganado la batalla');
+                audio.play();
                 finished=true;
             },300);
 
@@ -36,8 +40,8 @@ document.addEventListener('keydown', function(event) {
             document.getElementById('monje-azul').src=document.getElementById('monje-rojo').src;
             setTimeout(function(){
                 alert('Personaje 2 ha ganado la batalla');
-                
-            finished=true;
+                audio.play();
+                finished=true;
             },300);
         }
     }
