@@ -27,8 +27,8 @@ document.addEventListener('keydown', function(event) {
         if (personaje2.hp <= 0) {
             document.getElementById('monje-rojo').src=document.getElementById('monje-azul').src;
             setTimeout(function(){
-                alert('Personaje 1 ha ganado la batalla');
                 audio.play();
+                alert('Personaje 1 ha ganado la batalla');
                 finished=true;
             },300);
 
@@ -39,8 +39,8 @@ document.addEventListener('keydown', function(event) {
         if (personaje1.hp <= 0) {
             document.getElementById('monje-azul').src=document.getElementById('monje-rojo').src;
             setTimeout(function(){
-                alert('Personaje 2 ha ganado la batalla');
                 audio.play();
+                alert('Personaje 2 ha ganado la batalla');
                 finished=true;
             },300);
         }
